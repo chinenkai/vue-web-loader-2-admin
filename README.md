@@ -5,7 +5,9 @@
 设计参考  [SCUI](https://gitee.com/lolicode/scui)
 
 ## 项目预览：
-预览地址  [DEMO](https://vue-web-loader-2-admin.pages.dev/)
+预览地址：[DEMO](https://vue-web-loader-2-admin.pages.dev/)
+默认帐号：vue-web-loader-2-admin
+默认密码：vue-web-loader-2-admin
 
 ## 项目部署：
 
