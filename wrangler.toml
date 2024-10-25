@@ -14,4 +14,4 @@ binding = 'BUCKET' # <~ valid JavaScript variable name
 bucket_name = 'vue-web-loader-2-admin-r2'
 
 [vars]
-R2_BUCKET_DOMAIN = "https://xxx.r2.dev/"
+R2_BUCKET_DOMAIN = "https://pub-67bd2f4086ee4956a35362d543ce12dc.r2.dev"
