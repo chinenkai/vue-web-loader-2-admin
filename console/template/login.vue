@@ -50,8 +50,8 @@ export default {
         return {
             tabsValue: 'first',
             formData: {
-                username: "",
-                password: "",
+                username: "vue-web-loader-2-admin",
+                password: "vue-web-loader-2-admin",
             },
             rules: {
                 username: [
