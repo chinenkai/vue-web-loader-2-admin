@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>后台管理</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 载入基础库文件 -->
+    <link rel="stylesheet" href="../../statics/vue/tdesign.min.css">
+    <link rel="stylesheet" href="./assets/style.tdesign.css">
+    <script src="../../statics/others/lodash.min.js"></script>
+    <script src="../../statics/others/chart.umd.min.js"></script>
+    <script src="../../statics/vue/vue.2.6.14.min.js"></script>
+    <script src="../../statics/vue/vue-router.3.6.5.min.js"></script>
+    <script src="../../statics/vue/vue-composition-api.prod.js"></script>
+    <script src="../../statics/vue/tdesign.min.js"></script>
+    <script src="../../statics/vue/vue-web-loader-2.js"></script>
+    <style>
+    .loader-wrapper {position: absolute;height: 100%;width: 100%;top: 0;left: 0;}
+    .loader-content {width: 100px;aspect-ratio: 1;padding: 10px;box-sizing: border-box;display: grid;background: #fff;filter: blur(5px) contrast(10) hue-rotate(300deg);mix-blend-mode: darken;position: relative;margin-left: auto;margin-right: auto;margin-top: 25%;}
+    .loader-content:before,
+    .loader-content:after {content: "";grid-area: 1/1;width: 40px;height: 40px;background: #ffff00;animation: l7 2s infinite;}
+    .loader-content:after {
+        animation-delay: -1s;
+    }
+    @keyframes l7 {
+        0% {transform: translate(0, 0)}
+        25% {transform: translate(100%, 0)}
+        50% {transform: translate(100%, 100%)}
+        75% {transform: translate(0, 100%)}
+        100% {transform: translate(0, 0)}
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 主要内容 -->
+    <div class="loader-wrapper"><div class="loader-content"></div></div>
+    <div id="app"></div>
+    <script type="text/javascript">
+    // 请求并执行JS文件，通过Date.now()来避免浏览器缓存问题
+    VueWebLoader({
+        version: Date.now(),
+        entry: './main.js',
+    });
+    </script>
+</body>
+
+</html>

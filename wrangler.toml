@@ -1,0 +1,17 @@
+compatibility_flags = [ "nodejs_compat" ]
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "vue-web-loader-2-admin-d1"
+database_id = "905d6684-58d7-47c8-b0b8-0edcbc0bedf3"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "c60f0d419c934ad180c5d3eb172d26b2"
+
+[[r2_buckets]]
+binding = 'BUCKET' # <~ valid JavaScript variable name
+bucket_name = 'vue-web-loader-2-admin-r2'
+
+[vars]
+R2_BUCKET_DOMAIN = "https://xxx.r2.dev/"
