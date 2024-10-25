@@ -201,7 +201,7 @@ export default [
         defaultValue: [
             {
                 name: 'bg.jpg',
-                url: 'http://2024.h5pro.cn/upload/demo/bg.20240608.jpg'
+                url: 'http://xxx.xxx.xxx/upload/demo/bg.20240608.jpg'
             },
         ],
     },
